@@ -1,0 +1,92 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4a00e0, #8e2de2);
+}
+
+/* Container */
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Title */
+.title {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Moves counter */
+.moves {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Memory board */
+.memory-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Cards */
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.card:hover{
+    box-shadow: 0 3px 8px rgb(194, 194, 194);
+
+}
+
+/* Flip effect */
+.card.flipped {
+    background-color: #efe47c;
+    transform: rotateY(180deg);
+}
+
+/* Reset button */
+.resetBtn {
+    padding: 10px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: #8e2de2;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.resetBtn:hover {
+    background: #4a00e0;
+}
